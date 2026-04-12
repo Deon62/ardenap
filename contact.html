@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Ardena Platforms Africa Ltd</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <header class="nav-wrapper" id="nav">
+    <nav class="nav container">
+      <a href="/contact" class="nav-partner">
+        Partner with us
+        <svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <div class="nav-center">
+        <a href="/">Home</a>
+        <a href="/about">About</a>
+        <a href="/products">Products</a>
+        <a href="/contact" class="active">Contact</a>
+      </div>
+      <div class="nav-right">
+        <a href="/contact" class="btn btn-blue">Get in touch</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+  <div class="nav-drawer" id="navDrawer">
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/products">Products</a>
+    <a href="/contact" class="active">Contact</a>
+    <a href="/contact" class="btn btn-blue btn-full" style="margin-top:12px;">Partner with us</a>
+  </div>
+
+  <!-- ① FORM — full viewport, two-column -->
+  <section class="vp-section bg-grey">
+    <div class="container">
+      <div class="contact-grid">
+
+        <!-- Left: title -->
+        <div class="hero-anim" style="animation-delay:.1s">
+          <h1 class="heading-lg">Let's build<br />something together.</h1>
+          <p class="body-md" style="margin-top:20px;">
+            Whether you're a host, renter, business, developer, or investor —
+            we'd love to hear from you. We respond within one business day.
+          </p>
+        </div>
+
+        <!-- Right: form -->
+        <div data-anim="right">
+        <form class="cform cform-bordered" id="contactForm" onsubmit="handleSubmit(event)">
+          <div class="form-row">
+            <div class="fgroup">
+              <label for="firstName">First name</label>
+              <input id="firstName" type="text" name="first_name" placeholder="First name" required />
+            </div>
+            <div class="fgroup">
+              <label for="lastName">Last name</label>
+              <input id="lastName" type="text" name="last_name" placeholder="Last name" required />
+            </div>
+          </div>
+          <div class="fgroup">
+            <label for="email">Email address</label>
+            <input id="email" type="email" name="email" placeholder="your@email.com" required />
+          </div>
+          <div class="fgroup">
+            <label for="org">Organisation</label>
+            <input id="org" type="text" name="organisation" placeholder="Your company or organisation" />
+          </div>
+          <div class="fgroup">
+            <label for="topic">I'm enquiring about</label>
+            <select id="topic" name="topic">
+              <option value="" disabled selected>Select a topic</option>
+              <option>Ardena (Car Rental Platform)</option>
+              <option>Ardena Pay (Payments)</option>
+              <option>Business partnership</option>
+              <option>Developer / API access</option>
+              <option>Investment</option>
+              <option>Press &amp; media</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="fgroup">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell us what you're working on..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-blue btn-lg btn-full">
+            Send message
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <p style="font-size:12px;color:var(--muted);text-align:center;margin-top:12px;">
+            We respond within one business day.
+          </p>
+        </form>
+
+        <div class="form-success" id="formSuccess">
+          <div class="success-icon">&#10003;</div>
+          <h3>Message received.</h3>
+          <p>We'll be in touch within one business day.</p>
+        </div>
+        </div><!-- end right -->
+
+      </div><!-- end contact-grid -->
+    </div>
+  </section>
+
+  <!-- ② BLUE SECTION -->
+  <section class="vp-section bg-blue">
+    <div class="container">
+      <div class="why-grid">
+        <div>
+          <h2 class="heading-lg why-heading" data-anim="left">Ardena is<br />hiring &amp; partnering.</h2>
+          <p class="why-sub" data-anim="left" style="--delay:160ms">
+            We're building the future of African mobility and payments. If you want
+            to work on hard problems at the intersection of technology and Africa's
+            next chapter, we want to hear from you.
+          </p>
+          <div data-anim="left" style="--delay:240ms">
+            <a href="mailto:hello@ardena.africa" class="btn btn-white btn-lg">Send us a message</a>
+          </div>
+        </div>
+        <div class="why-items" data-anim="right" style="--delay:120ms">
+          <div class="why-item">
+            <div class="why-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+                <polyline points="14 2 14 8 20 8" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="why-text">
+              <h4>For businesses</h4>
+              <p>Integrate Ardena into your corporate fleet, travel, or logistics operations via our enterprise APIs.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                <polyline points="16 18 22 12 16 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                <polyline points="8 6 2 12 8 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <div class="why-text">
+              <h4>For developers</h4>
+              <p>Access our platform APIs, build on top of Ardena Pay's Stellar infrastructure, and expand what's possible.</p>
+            </div>
+          </div>
+          <div class="why-item">
+            <div class="why-icon">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+                <line x1="12" y1="1" x2="12" y2="23" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <div class="why-text">
+              <h4>For investors</h4>
+              <p>We're building critical African mobility and payments infrastructure. Let's talk about what we're building and where we're going.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-main">
+        <div>
+          <div class="footer-logo-wrap">
+            <a href="/"><img src="assets/ardena.svg" alt="Ardena Platforms" class="footer-logo" /></a>
+          </div>
+          <p class="footer-tagline">
+            Ardena Platforms Africa Ltd<br />
+            Incorporated March 17, 2026<br />
+            Technology · Mobility · Payments
+          </p>
+        </div>
+        <div class="footer-cols">
+          <div class="footer-col">
+            <h5>Products</h5>
+            <ul>
+              <li><a href="https://ardena.co.ke" target="_blank" rel="noopener">Ardena</a></li>
+              <li><a href="/products">Ardena Pay</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Company</h5>
+            <ul>
+              <li><a href="/about">About</a></li>
+              <li><a href="/products">Products</a></li>
+              <li><a href="/contact">Contact</a></li>
+            </ul>
+          </div>
+          <div class="footer-col">
+            <h5>Connect</h5>
+            <ul>
+              <li><a href="#">Twitter / X</a></li>
+              <li><a href="#">LinkedIn</a></li>
+              <li><a href="https://ardena.co.ke" target="_blank" rel="noopener">ardena.co.ke</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>&copy; 2026 Ardena Platforms Africa Ltd. All rights reserved.</span>
+        <span>Built in Africa.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
