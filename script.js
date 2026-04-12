@@ -126,3 +126,33 @@ document.querySelectorAll('.feature-item, .why-item, .timeline-item, .value-card
     animObserver.observe(el);
   }
 });
+
+/* ── Hero title rotation (cylinder: exits down, enters from top) ── */
+const heroTitleEl = document.getElementById('heroTitle');
+if (heroTitleEl) {
+  const titles = [
+    'Building the infrastructure<br />Africa runs on.',
+    'Car rentals, payments,<br />and software — made for Africa.',
+    'Software engineered for<br />Africa\'s next chapter.'
+  ];
+  let idx = 0;
+
+  setInterval(() => {
+    // 1. Slide current text downward + fade out
+    heroTitleEl.classList.add('title-exit');
+
+    setTimeout(() => {
+      // 2. Swap content, snap to above (no transition)
+      idx = (idx + 1) % titles.length;
+      heroTitleEl.innerHTML = titles[idx];
+      heroTitleEl.classList.remove('title-exit');
+      heroTitleEl.classList.add('title-enter'); // positions above, transition:none
+
+      // 3. Force reflow so browser sees the enter position
+      heroTitleEl.getBoundingClientRect();
+
+      // 4. Remove enter class — CSS transition kicks in, slides down to natural position
+      heroTitleEl.classList.remove('title-enter');
+    }, 380);
+  }, 4000);
+}
