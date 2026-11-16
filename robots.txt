@@ -1,0 +1,9 @@
+# Ardena Platforms Africa Ltd — corporate site
+# This host is the COMPANY site only. The car-rental product lives on
+# ardena.co.ke and is indexed separately; nothing here should be crawled
+# as part of that site.
+
+User-agent: *
+Allow: /
+
+Sitemap: https://corp.ardena.co.ke/sitemap.xml

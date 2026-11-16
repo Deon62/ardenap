@@ -3,305 +3,301 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Ardena Platforms Africa Ltd</title>
+
+  <title>Ardena Platforms Africa Ltd — Technology Company in Nairobi</title>
+  <meta name="description" content="Ardena Platforms Africa Ltd is a Nairobi technology company. We ship our own products — Ardena, als and Tickopedia — and deliver software development, AI solutions, business automation, consultancy and digital commerce for businesses across Africa." />
+  <link rel="canonical" href="https://corp.ardena.co.ke/" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+  <meta name="author" content="Ardena Platforms Africa Ltd" />
+  <meta name="theme-color" content="#007AFF" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Ardena Platforms Africa Ltd" />
+  <meta property="og:title" content="Ardena Platforms Africa Ltd — Software & Product Company in Nairobi" />
+  <meta property="og:description" content="We build and ship our own products — Ardena, als and Tickopedia — and build web and mobile software for businesses across Africa." />
+  <meta property="og:url" content="https://corp.ardena.co.ke/" />
+  <meta property="og:locale" content="en_KE" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Ardena Platforms Africa Ltd" />
+  <meta name="twitter:description" content="A Nairobi software company building products and shipping software for businesses across Africa." />
+
+  <link rel="icon" href="assets/ardena.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@300..800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "@id": "https://corp.ardena.co.ke/#organization",
+    "name": "Ardena Platforms Africa Ltd",
+    "alternateName": "Ardena Platforms",
+    "url": "https://corp.ardena.co.ke/",
+    "logo": "https://corp.ardena.co.ke/assets/ardena.svg",
+    "foundingDate": "2026-03-17",
+    "description": "Nairobi-based software and product company building web and mobile platforms for Africa.",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Nairobi",
+      "addressCountry": "KE"
+    },
+    "sameAs": [
+      "https://ardena.co.ke",
+      "https://als.ardena.co.ke",
+      "https://tickopedia.com",
+      "https://play.google.com/store/apps/dev?id=6656048407762494190",
+      "https://apps.apple.com/ke/developer/ardena-platforms-africa-ltd/id6771888695"
+    ]
+  }
+  </script>
 </head>
 <body>
 
   <!-- NAV -->
   <header class="nav-wrapper" id="nav">
     <nav class="nav container">
-      <a href="/partner" class="nav-partner">
-        Partner with us
-        <svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <a href="/" class="nav-logo" aria-label="Ardena Platforms Africa Ltd — home">
+        <img src="assets/ardena.svg" alt="Ardena Platforms Africa Ltd" width="98" height="21" />
       </a>
       <div class="nav-center">
-        <a href="/">Home</a>
+        <a href="/" class="active">Home</a>
         <a href="/about">About</a>
         <a href="/products">Products</a>
+        <a href="/services">Services</a>
+        <a href="/team">Team</a>
+        <a href="/partner">Partner</a>
         <a href="/contact">Contact</a>
       </div>
       <div class="nav-right">
         <a href="/contact" class="btn btn-blue">Get in touch</a>
       </div>
-      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="navDrawer">
         <span></span><span></span><span></span>
       </button>
     </nav>
   </header>
 
   <div class="nav-drawer" id="navDrawer">
-    <a href="/">Home</a>
+    <a href="/" class="active">Home</a>
     <a href="/about">About</a>
     <a href="/products">Products</a>
+    <a href="/services">Services</a>
+    <a href="/team">Team</a>
+    <a href="/partner">Partner</a>
     <a href="/contact">Contact</a>
-    <a href="/partner" class="btn btn-blue btn-full" style="margin-top:12px;">Partner with us</a>
+    <a href="/contact" class="btn btn-blue btn-full" style="margin-top:12px;">Get in touch</a>
   </div>
 
-  <!-- ① HERO -->
-  <section class="hero">
-    <div class="container hero-content">
-      <h1 class="hero-headline hero-anim" style="animation-delay:.1s">
-        Building the platforms<br />Africa runs on.
+  <!-- HERO — centred, over the dot terrain (script.js) -->
+  <section class="hero-c" aria-labelledby="hero-title">
+    <div class="hero-c-field" aria-hidden="true"><canvas id="heroField"></canvas></div>
+    <div class="wrap hero-c-inner">
+      <h1 id="hero-title" class="type-display hero-anim" aria-label="Building the platforms Africa runs on.">
+        <span aria-hidden="true" class="line">Building the</span>
+        <span aria-hidden="true" class="line"><span class="swap" id="heroWord" data-words="platforms,software,AI,automation,commerce">platforms</span></span>
+        <span aria-hidden="true" class="line">Africa runs on.</span>
       </h1>
-      <p class="body-lg hero-sub hero-anim" style="animation-delay:.24s">
-        Ardena Platforms Africa Ltd creates transformative products across
-        mobility and digital payments  built for Africa, from Africa.
+      <p class="type-lede muted hero-anim" style="animation-delay:.15s">
+        Ardena Platforms Africa is a technology company in Nairobi. We ship our own
+        products, and we build software, AI and automation for the businesses
+        shaping Africa's next decade.
       </p>
-      <div class="hero-actions hero-anim" style="animation-delay:.36s">
-        <a href="/products" class="btn btn-blue btn-lg">
-          Explore products
-          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-        </a>
-        <a href="/about" class="btn btn-outline btn-lg">Our story</a>
+      <div class="hero-c-actions hero-anim" style="animation-delay:.3s">
+        <a href="/services" class="btn btn-dark">What we do <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <a href="/products" class="btn btn-outline">Our products</a>
       </div>
     </div>
   </section>
 
-  <!-- ② ABOUT -->
-  <section class="vp-section bg-white" id="about">
-    <div class="container">
-      <div class="about-grid">
-        <div>
-          <h2 class="heading-lg" data-anim="left">
-            Technology that<br />moves Africa forward.
-          </h2>
-          <a href="/about" class="btn btn-outline" style="margin-top:36px;" data-anim="left" style="--delay:160ms">
-            Read our story
-            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
+  <!-- SHIFT -->
+  <section class="chapter tone-purple" id="about" aria-labelledby="about-title">
+    <div class="wrap">
+      <h2 id="about-title" class="type-statement mw-18" data-anim="up">Africa doesn't need borrowed software. It needs its own.</h2>
+      <div class="grid12 push">
+        <div class="c-4" data-anim="up">
+          <p class="type-lede muted">
+            Most platforms are built elsewhere and retrofitted for African users,
+            networks and payments. We start here: M-Pesa first, low bandwidth,
+            local behaviour — then build to a world-class standard.
+          </p>
+          <a href="/about" class="text-link type-label" style="margin-top:24px">Our story</a>
         </div>
-        <div class="about-body" data-anim="right">
-          <p>
-            Incorporated on <strong>March 17, 2026</strong>, Ardena Platforms Africa Ltd
-            was founded with a singular conviction: that Africa deserves world-class
-            technology built from the ground up — for its people, its infrastructure,
-            and its unique opportunities.
-          </p>
-          <p>
-            We are engineers, designers, and builders creating platforms that power
-            the next generation of African commerce, movement, and ownership.
-          </p>
-          <div class="about-stats">
-            <div class="stat-item">
-              <span class="stat-num">2</span>
-              <span class="stat-lbl">Products</span>
-            </div>
-            <div class="stat-sep"></div>
-            <div class="stat-item">
-              <span class="stat-num">2026</span>
-              <span class="stat-lbl">Founded</span>
-            </div>
-            <div class="stat-sep"></div>
-            <div class="stat-item">
-              <span class="stat-num">Africa</span>
-              <span class="stat-lbl">Our home market</span>
-            </div>
+        <div class="c-7 start-6" data-anim="up" style="--delay:120ms;border-top:1px solid var(--tone-line)">
+          <div class="relation">
+            <p class="type-label muted">How it usually goes</p>
+            <p class="relation-line dim"><span>Global</span><span class="arrow-line"></span><span>Retrofit</span></p>
+            <p class="muted">A product designed for someone else, adapted afterwards.</p>
+          </div>
+          <div class="relation">
+            <p class="type-label muted">How we build</p>
+            <p class="relation-line"><span>Africa</span><span class="arrow-line"></span><span>World-class</span></p>
+            <p class="muted">Designed for local users from the first screen, held to the highest standard.</p>
+          </div>
+          <div class="stats" style="border-top:none;margin-top:8px">
+            <div><strong>3</strong><span class="type-label muted">Products live</span></div>
+            <div><strong>2026</strong><span class="type-label muted">Founded</span></div>
+            <div><strong>Nairobi</strong><span class="type-label muted">Where we build</span></div>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ③ PRODUCTS -->
-  <section class="vp-section bg-grey" id="products">
-    <div class="container">
-      <div class="products-intro">
-        <h2 class="heading-lg" data-anim="up">Two products.<br />One ecosystem.</h2>
-        <p class="body-md" style="margin-top:14px;max-width:520px;" data-anim="up" style="--delay:160ms">
-          Ardena and Ardena Pay are built to work together — a seamless
-          experience from booking a car to completing the payment.
-        </p>
+  <!-- PRODUCTS -->
+  <section class="chapter tone-white" id="products" aria-labelledby="products-title">
+    <div class="wrap">
+      <div class="grid12">
+        <h2 id="products-title" class="type-statement mw-16 c-7" data-anim="up">Three products. One standard.</h2>
+        <div class="c-4 start-9 self-end" data-anim="up" style="--delay:120ms">
+          <p class="type-lede muted">Mobility, education and live events. Different problems, the same care for the details — all of them live today.</p>
+          <a href="/products" class="text-link type-label" style="margin-top:24px">All products</a>
+        </div>
       </div>
-      <div class="products-cards" data-anim="up" style="--delay:120ms">
+      <ul class="cards-3 push" style="list-style:none">
+          <li class="card">
+            <div class="card-top"><span class="type-label">01</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 17h14v-5l-2-5H7l-2 5z"/><circle cx="8" cy="17" r="1.8"/><circle cx="16" cy="17" r="1.8"/></svg></div>
+            <h3 class="card-title">Ardena</h3>
+            <p class="card-body">A peer-to-peer car rental marketplace. Owners list their cars, renters book them, and every person is verified.</p>
+            <ul class="card-points"><li>Host and client apps</li><li>Live trip tracking</li><li>Android and iOS</li></ul>
+            <a href="/products#ardena" class="text-link type-label">Inside Ardena</a>
+          </li>          <li class="card">
+            <div class="card-top"><span class="type-label">02</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 4h7a3 3 0 0 1 3 3v13a2.5 2.5 0 0 0-2.5-2.5H4zM20 4h-3a3 3 0 0 0-3 3v13a2.5 2.5 0 0 1 2.5-2.5H20z"/></svg></div>
+            <h3 class="card-title">als</h3>
+            <p class="card-body">An AI study companion that answers only from a student's own notes, slides and past papers, citing the page.</p>
+            <ul class="card-points"><li>Answers cited to the page</li><li>Quizzes from your notes</li><li>Android, iOS soon</li></ul>
+            <a href="/products#als" class="text-link type-label">Inside als</a>
+          </li>          <li class="card">
+            <div class="card-top"><span class="type-label">03</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9a2 2 0 0 0 0 6v4h18v-4a2 2 0 0 1 0-6V5H3z"/></svg></div>
+            <h3 class="card-title">Tickopedia</h3>
+            <p class="card-body">Event discovery and secure digital ticketing, with QR check-in and an organiser dashboard.</p>
+            <ul class="card-points"><li>Discovery by city</li><li>Digital tickets</li><li>QR check-in at the door</li></ul>
+            <a href="/products#tickopedia" class="text-link type-label">Inside Tickopedia</a>
+          </li>
+      </ul>
+    </div>
+  </section>
 
-        <!-- Ardena — black card -->
-        <div class="prod-card prod-card-dark">
-          <div class="prod-card-icon">
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-              <rect x="4" y="16" width="32" height="14" rx="1" stroke="rgba(255,255,255,0.75)" stroke-width="1.8"/>
-              <path d="M10 16V12C10 9.79 11.79 8 14 8H26C28.21 8 30 9.79 30 12V16" stroke="rgba(255,255,255,0.75)" stroke-width="1.8"/>
-              <circle cx="12" cy="30" r="3" stroke="rgba(255,255,255,0.75)" stroke-width="1.8"/>
-              <circle cx="28" cy="30" r="3" stroke="rgba(255,255,255,0.75)" stroke-width="1.8"/>
-              <path d="M4 22H36" stroke="rgba(255,255,255,0.75)" stroke-width="1.8"/>
-            </svg>
-          </div>
-          <h3>Ardena</h3>
-          <p class="prod-card-desc">
-            Africa's peer-to-peer car rental platform — connecting car owners
-            with people who need a ride. Hosts list their vehicles, clients book
-            instantly. Safe, transparent, and built for African cities.
-          </p>
-          <div class="prod-apps">
-            <span class="prod-app-badge">Host App</span>
-            <span class="prod-app-badge">Client App</span>
-          </div>
-          <a href="https://ardena.co.ke" target="_blank" rel="noopener" class="prod-card-link">
-            Visit ardena.co.ke
-            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
+  <!-- SERVICES -->
+  <section class="chapter tone-white" id="services" aria-labelledby="services-title">
+    <div class="wrap">
+      <div class="grid12">
+        <h2 id="services-title" class="type-statement mw-16 c-7" data-anim="up">One team for everything digital.</h2>
+        <div class="c-4 start-9 self-end" data-anim="up" style="--delay:120ms">
+          <p class="type-lede muted">Everything we learned shipping our own platforms — the architecture, the payments, the AI, the store releases — we bring to your project.</p>
+          <a href="/services" class="text-link type-label" style="margin-top:24px">All services</a>
         </div>
+      </div>
+      <ul class="cards-3 push" style="list-style:none">
+          <li class="card">
+            <div class="card-top"><span class="type-label">01</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8 8l-4 4 4 4M16 8l4 4-4 4M13.5 6l-3 12"/></svg></div>
+            <h3 class="card-title">Software development</h3>
+            <p class="card-body">Web platforms, Android and iOS apps, APIs and the backends behind them.</p>
+            <ul class="card-points"><li>Web &amp; mobile apps</li><li>APIs &amp; integrations</li><li>Admin tools</li></ul>
+            <a href="/services#software" class="text-link type-label">Software</a>
+          </li>          <li class="card">
+            <div class="card-top"><span class="type-label">02</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l1.8 4.6L18.5 9l-4.7 1.4L12 15l-1.8-4.6L5.5 9l4.7-1.4z"/></svg></div>
+            <h3 class="card-title">AI solutions</h3>
+            <p class="card-body">Assistants grounded in your own documents, extraction, and AI features in your product.</p>
+            <ul class="card-points"><li>Document assistants</li><li>Support on web &amp; WhatsApp</li><li>Data extraction</li></ul>
+            <a href="/services#ai" class="text-link type-label">AI</a>
+          </li>          <li class="card">
+            <div class="card-top"><span class="type-label">03</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M4.9 4.9l2.1 2.1M17 17l2.1 2.1M4.9 19.1L7 17M17 7l2.1-2.1"/></svg></div>
+            <h3 class="card-title">Business automation</h3>
+            <p class="card-body">Workflows, integrations, reconciliation and reports that run themselves.</p>
+            <ul class="card-points"><li>Workflow automation</li><li>M-Pesa reconciliation</li><li>Automated reports</li></ul>
+            <a href="/services#automation" class="text-link type-label">Automation</a>
+          </li>          <li class="card">
+            <div class="card-top"><span class="type-label">04</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 5h16v11H9l-5 4z"/></svg></div>
+            <h3 class="card-title">Consultancy</h3>
+            <p class="card-body">Technology strategy, architecture reviews and product scoping before you spend.</p>
+            <ul class="card-points"><li>Strategy &amp; roadmaps</li><li>Architecture reviews</li><li>MVP scoping</li></ul>
+            <a href="/services#consultancy" class="text-link type-label">Consultancy</a>
+          </li>          <li class="card">
+            <div class="card-top"><span class="type-label">05</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6.2"/><circle cx="10" cy="20.5" r="1"/><circle cx="17" cy="20.5" r="1"/></svg></div>
+            <h3 class="card-title">Digital commerce</h3>
+            <p class="card-body">Online stores, marketplaces, bookings and ticketing that sell.</p>
+            <ul class="card-points"><li>Stores &amp; marketplaces</li><li>Bookings &amp; ticketing</li><li>Orders &amp; inventory</li></ul>
+            <a href="/services#commerce" class="text-link type-label">Commerce</a>
+          </li>          <li class="card">
+            <div class="card-top"><span class="type-label">06</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></div>
+            <h3 class="card-title">And seven more</h3>
+            <p class="card-body">Payments, cloud hosting, maintenance, data, design, AI training and developer outsourcing.</p>
+            <ul class="card-points"><li>Payments &amp; M-Pesa</li><li>Hosting &amp; support plans</li><li>Design, data &amp; talent</li></ul>
+            <a href="/services" class="text-link type-label">All twelve services</a>
+          </li>
+      </ul>
+    </div>
+  </section>
 
-        <!-- Ardena Pay — orange card -->
-        <div class="prod-card prod-card-orange">
-          <div class="prod-card-icon">
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
-              <rect x="4" y="10" width="32" height="22" rx="1" stroke="rgba(255,255,255,0.75)" stroke-width="1.8"/>
-              <path d="M4 17H36" stroke="rgba(255,255,255,0.75)" stroke-width="1.8"/>
-              <rect x="26" y="22" width="7" height="5" fill="rgba(255,255,255,0.75)"/>
-              <path d="M9 25H18" stroke="rgba(255,255,255,0.75)" stroke-width="1.8" stroke-linecap="round"/>
-            </svg>
-          </div>
-          <h3>Ardena Pay</h3>
-          <p class="prod-card-desc">
-            A Stellar-powered digital wallet enabling renters to pay for car
-            rentals seamlessly within the Ardena platform. Fast, borderless
-            settlement designed for Africa's cross-border economy.
-          </p>
-          <div class="prod-stellar prod-stellar-light">
-            <span class="prod-stellar-dot"></span>
-            Powered by Stellar blockchain
-          </div>
-          <a href="/products" class="prod-card-link">
-            Learn more
-            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </a>
+  <!-- HOW WE WORK -->
+  <section class="chapter tone-blue" id="process" aria-labelledby="process-title">
+    <div class="wrap">
+      <div class="grid12">
+        <h2 id="process-title" class="type-statement mw-16 c-7" data-anim="up">Working software, early and often.</h2>
+        <p class="type-lede muted c-4 start-9 self-end" data-anim="up" style="--delay:120ms">The process we use on our own products. Short cycles, a demo every one or two weeks, and no surprises at the end.</p>
+      </div>
+      <ol class="steps push" data-anim="up" style="--delay:160ms">
+        <li><span class="type-label muted">01</span><h3>Discover</h3><p class="muted">The business, the users, the constraints.</p></li>
+        <li><span class="type-label muted">02</span><h3>Design</h3><p class="muted">Scope, architecture and screens, in writing.</p></li>
+        <li><span class="type-label muted">03</span><h3>Build</h3><p class="muted">Short sprints with a working demo.</p></li>
+        <li><span class="type-label muted">04</span><h3>Launch</h3><p class="muted">Testing, deployment and store release.</p></li>
+        <li><span class="type-label muted">05</span><h3>Support</h3><p class="muted">Monitoring and improvements. You keep the code.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="chapter tone-white" id="faq" aria-labelledby="faq-title">
+    <div class="wrap">
+      <div class="grid12 my-auto">
+        <div class="c-5" data-anim="up">
+          <h2 id="faq-title" class="type-statement mw-10">Questions, answered.</h2>
+          <p class="type-lede muted" style="margin-top:32px">Something else on your mind? <a href="/contact" class="text-link" style="color:var(--black)">Start a conversation</a></p>
         </div>
-
+        <div class="c-7 faq-list" data-anim="up" style="--delay:120ms">
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>What does Ardena Platforms Africa Ltd do?</span><svg class="faq-icon faq-plus" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 4v12M4 10h12" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></button>
+            <div class="faq-a"><div class="faq-a-inner"><p>Two things. We build and run our own products — Ardena, als and Tickopedia — and we work with other businesses on software, AI, automation, commerce, payments, hosting and more. The company is registered in Kenya and based in Nairobi.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Do you take on client projects?</span><svg class="faq-icon faq-plus" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 4v12M4 10h12" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></button>
+            <div class="faq-a"><div class="faq-a-inner"><p>Yes. See <a href="/services">our services</a>, then send a short brief through the <a href="/contact">contact form</a>. We reply within one business day.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>What is als?</span><svg class="faq-icon faq-plus" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 4v12M4 10h12" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></button>
+            <div class="faq-a"><div class="faq-a-inner"><p>An AI study companion that works only with a student's own coursework. It answers from uploaded notes, slides and past papers and cites the lecture and page. Coursework is never used to train models. More at <a href="https://als.ardena.co.ke" target="_blank" rel="noopener">als.ardena.co.ke</a>.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>What is Tickopedia?</span><svg class="faq-icon faq-plus" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 4v12M4 10h12" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></button>
+            <div class="faq-a"><div class="faq-a-inner"><p>Our event discovery and ticketing platform. Attendees find events and buy secure digital tickets; organisers publish events, sell tickets and check people in by QR code. More at <a href="https://tickopedia.com" target="_blank" rel="noopener">tickopedia.com</a>.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>Where can I download your apps?</span><svg class="faq-icon faq-plus" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 4v12M4 10h12" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></button>
+            <div class="faq-a"><div class="faq-a-inner"><p>On our <a href="https://play.google.com/store/apps/dev?id=6656048407762494190" target="_blank" rel="noopener">Google Play developer page</a> and our <a href="https://apps.apple.com/ke/developer/ardena-platforms-africa-ltd/id6771888695" target="_blank" rel="noopener">App Store developer page</a>.</p></div></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-q" aria-expanded="false"><span>How do I partner with Ardena?</span><svg class="faq-icon faq-plus" width="20" height="20" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 4v12M4 10h12" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></button>
+            <div class="faq-a"><div class="faq-a-inner"><p>We work with vehicle hosts and fleets, insurers, event organisers, schools and businesses. Head to the <a href="/partner">Partner page</a> and send an interest form.</p></div></div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ④ WHY — BLUE -->
-  <section class="vp-section bg-blue" id="why">
-    <div class="container">
-      <div class="why-grid">
-        <div>
-          <h2 class="heading-lg why-heading" data-anim="left">Built different,<br />by design.</h2>
-          <p class="why-sub" data-anim="left" style="--delay:160ms">
-            We don't retrofit global products for Africa. Every decision —
-            from architecture to user experience — is made with African users
-            and African infrastructure in mind.
-          </p>
-          <div data-anim="left" style="--delay:240ms">
-            <a href="/contact" class="btn btn-white btn-lg">Talk to us</a>
+  <!-- CLOSING -->
+  <section class="chapter tone-charcoal" aria-labelledby="start-title">
+    <div class="wrap">
+      <div class="grid12 my-auto">
+        <h2 id="start-title" class="type-statement mw-14 c-8" data-anim="up">Tell us what you're building.</h2>
+        <div class="c-4 self-end" data-anim="up" style="--delay:120ms">
+          <p class="type-lede muted">Send a short brief. We reply within one business day with questions, or a plan.</p>
+          <div style="margin-top:40px;display:flex;flex-wrap:wrap;align-items:center;gap:20px 32px">
+            <a href="/contact" class="btn btn-white">Start a project <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a href="/partner" class="text-link type-label">Partner with us</a>
           </div>
         </div>
-        <div class="why-items" data-anim="right" style="--delay:120ms">
-          <div class="why-item">
-            <div class="why-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-                <circle cx="12" cy="12" r="9" stroke="currentColor" stroke-width="1.8"/>
-                <path d="M12 3c0 0-4 4-4 9s4 9 4 9" stroke="currentColor" stroke-width="1.8"/>
-                <path d="M12 3c0 0 4 4 4 9s-4 9-4 9" stroke="currentColor" stroke-width="1.8"/>
-                <path d="M3 12h18" stroke="currentColor" stroke-width="1.8"/>
-              </svg>
-            </div>
-            <div class="why-text">
-              <h4>Africa-native</h4>
-              <p>Designed for local connectivity, local currencies, and local user behaviour — not a global product forced to fit.</p>
-            </div>
-          </div>
-          <div class="why-item">
-            <div class="why-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-                <path d="M12 2L3 7v5c0 5.25 3.75 10.17 9 11.38C18.25 22.17 22 17.25 22 12V7l-9-5z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
-                <path d="M9 12l2 2 4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-            </div>
-            <div class="why-text">
-              <h4>Secure &amp; trusted</h4>
-              <p>Stellar blockchain settlement for Ardena Pay means fast, transparent, tamper-proof transactions every time.</p>
-            </div>
-          </div>
-          <div class="why-item">
-            <div class="why-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-                <circle cx="9" cy="7" r="4" stroke="currentColor" stroke-width="1.8"/>
-                <path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-              </svg>
-            </div>
-            <div class="why-text">
-              <h4>Community-powered</h4>
-              <p>Ardena is peer-to-peer by design. Hosts earn, clients save, and the entire ecosystem grows together.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ⑤ FAQ -->
-  <section class="vp-section bg-white" id="faq">
-    <div class="container faq-inner">
-
-      <div class="faq-left" data-anim="left">
-        <h2 class="heading-lg">Frequently<br />asked questions.</h2>
-        <p class="body-md" style="margin-top:20px;">
-          Can't find your answer here?<br />
-          <a href="/contact" style="color:var(--blue);font-weight:600;">Contact us directly.</a>
-        </p>
-      </div>
-
-      <div class="faq-list" data-anim="right">
-
-        <div class="faq-item">
-          <button class="faq-q" aria-expanded="false">
-            <span>What is Ardena?</span>
-            <svg class="faq-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </button>
-          <div class="faq-a"><div class="faq-a-inner"><p>Ardena is a peer-to-peer car rental platform that connects car owners (hosts) with people who need a vehicle (clients). Hosts list their cars, clients browse and book — all through two dedicated apps built for the African market. Visit <a href="https://ardena.co.ke" target="_blank" rel="noopener" style="color:var(--blue);font-weight:600;">ardena.co.ke</a> to get started.</p>
-          </p></div></div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-q" aria-expanded="false">
-            <span>How do I list my car as a host?</span>
-            <svg class="faq-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </button>
-          <div class="faq-a"><div class="faq-a-inner"><p>Download the Ardena Host App, create an account, and list your vehicle with photos, availability, and pricing. You're in full control — approve bookings, set your own rates, and manage your calendar. Payments are received securely through Ardena Pay.</p>
-          </p></div></div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-q" aria-expanded="false">
-            <span>What is Ardena Pay?</span>
-            <svg class="faq-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </button>
-          <div class="faq-a"><div class="faq-a-inner"><p>Ardena Pay is our digital payment layer, powered by the Stellar blockchain. It enables renters to pay for car rentals seamlessly within the Ardena platform. Ardena Pay is currently in beta — offering fast, secure, and borderless settlement for every transaction on the platform.</p>
-          </p></div></div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-q" aria-expanded="false">
-            <span>Is Ardena available in my city?</span>
-            <svg class="faq-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </button>
-          <div class="faq-a"><div class="faq-a-inner"><p>Ardena is currently rolling out across African cities. Check <a href="https://ardena.co.ke" target="_blank" rel="noopener" style="color:var(--blue);font-weight:600;">ardena.co.ke</a> for the latest coverage. If your city is not yet listed, you can sign up to be notified when we expand to your area — or list your car early to help grow the community there.</p>
-          </p></div></div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-q" aria-expanded="false">
-            <span>How does Ardena ensure safety and trust?</span>
-            <svg class="faq-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </button>
-          <div class="faq-a"><div class="faq-a-inner"><p>Every host and client goes through identity verification before they can transact on the platform. Both parties leave reviews after each rental, building a transparent reputation system. Payments are held securely and only released once the rental is confirmed, protecting both hosts and clients.</p>
-          </p></div></div>
-        </div>
-
-        <div class="faq-item">
-          <button class="faq-q" aria-expanded="false">
-            <span>I'm an investor or partner — how do I reach you?</span>
-            <svg class="faq-icon" width="20" height="20" viewBox="0 0 20 20" fill="none"><path d="M5 7.5L10 12.5L15 7.5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </button>
-          <div class="faq-a"><div class="faq-a-inner"><p>We'd love to connect. Use our <a href="/contact" style="color:var(--blue);font-weight:600;">contact form</a> and select "Investment" or "Business partnership" as your topic — or reach out directly through the Partner with us link in the navigation.</p></div></div>
-        </div>
-
       </div>
     </div>
   </section>
@@ -312,20 +308,37 @@
       <div class="footer-main">
         <div>
           <div class="footer-logo-wrap">
-            <a href="/"><img src="assets/ardena.svg" alt="Ardena Platforms" class="footer-logo" /></a>
+            <a href="/"><img src="assets/ardena.svg" alt="Ardena Platforms Africa Ltd" class="footer-logo" /></a>
           </div>
           <p class="footer-tagline">
             Ardena Platforms Africa Ltd<br />
-            Incorporated March 17, 2026<br />
-            Technology · Mobility · Payments
+            Incorporated March 17, 2026 &middot; Nairobi, Kenya<br />
+            Software &middot; AI &middot; Automation &middot; Commerce
           </p>
+          <div class="store-badges" style="margin-top:24px;">
+            <a href="https://play.google.com/store/apps/dev?id=6656048407762494190" target="_blank" rel="noopener" class="store-badge store-badge-invert">
+              <svg width="16" height="18" viewBox="0 0 512 512" fill="currentColor" aria-hidden="true"><path d="M325.3 234.3 104.6 13l280.8 161.2-60.1 60.1zM47 0C34 6.8 25.3 19.2 25.3 35.3v441.3c0 16.1 8.7 28.5 21.7 35.3l256.6-256L47 0zm425.2 225.6-58.9-34.1-65.7 65.5 65.7 65.5 60.1-34.1c18-14.3 18-46.5-1.2-62.8zM104.6 499l280.8-161.2-60.1-60.1L104.6 499z"/></svg>
+              <span class="store-badge-txt">
+                <span class="store-badge-sm">Get it on</span>
+                <span class="store-badge-lg">Google Play</span>
+              </span>
+            </a>
+            <a href="https://apps.apple.com/ke/developer/ardena-platforms-africa-ltd/id6771888695" target="_blank" rel="noopener" class="store-badge store-badge-invert">
+              <svg width="15" height="18" viewBox="0 0 384 512" fill="currentColor" aria-hidden="true"><path d="M318.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C63.3 141.2 4 184.8 4 273.5q0 39.3 14.4 81.2c12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"/></svg>
+              <span class="store-badge-txt">
+                <span class="store-badge-sm">Download on</span>
+                <span class="store-badge-lg">the App Store</span>
+              </span>
+            </a>
+          </div>
         </div>
         <div class="footer-cols">
           <div class="footer-col">
             <h5>Products</h5>
             <ul>
               <li><a href="https://ardena.co.ke" target="_blank" rel="noopener">Ardena</a></li>
-              <li><a href="/products">Ardena Pay</a></li>
+              <li><a href="https://als.ardena.co.ke" target="_blank" rel="noopener">als</a></li>
+              <li><a href="https://tickopedia.com" target="_blank" rel="noopener">Tickopedia</a></li>
             </ul>
           </div>
           <div class="footer-col">
@@ -333,15 +346,18 @@
             <ul>
               <li><a href="/about">About</a></li>
               <li><a href="/products">Products</a></li>
+              <li><a href="/services">Services</a></li>
+              <li><a href="/team">Team</a></li>
+              <li><a href="/partner">Partner</a></li>
               <li><a href="/contact">Contact</a></li>
             </ul>
           </div>
           <div class="footer-col">
             <h5>Connect</h5>
             <ul>
-              <li><a href="#">Twitter / X</a></li>
-              <li><a href="#">LinkedIn</a></li>
-              <li><a href="https://ardena.co.ke" target="_blank" rel="noopener">ardena.co.ke</a></li>
+              <li><a href="https://play.google.com/store/apps/dev?id=6656048407762494190" target="_blank" rel="noopener">Google Play</a></li>
+              <li><a href="https://apps.apple.com/ke/developer/ardena-platforms-africa-ltd/id6771888695" target="_blank" rel="noopener">App Store</a></li>
+              <li><a href="mailto:hello@ardena.africa">hello@ardena.africa</a></li>
             </ul>
           </div>
         </div>

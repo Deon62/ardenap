@@ -3,30 +3,47 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
   <title>Contact — Ardena Platforms Africa Ltd</title>
+  <meta name="description" content="Talk to Ardena Platforms Africa Ltd in Nairobi. Start a software project, partner with us, or ask about Ardena, als or Tickopedia. We reply within one business day." />
+  <link rel="canonical" href="https://corp.ardena.co.ke/contact" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1" />
+  <meta name="theme-color" content="#007AFF" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Ardena Platforms Africa Ltd" />
+  <meta property="og:title" content="Contact — Ardena Platforms Africa Ltd" />
+  <meta property="og:description" content="Start a project, partner with us, or ask about our products. We reply within one business day." />
+  <meta property="og:url" content="https://corp.ardena.co.ke/contact" />
+  <meta property="og:locale" content="en_KE" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" href="assets/ardena.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@300..800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
   <header class="nav-wrapper" id="nav">
     <nav class="nav container">
-      <a href="/partner" class="nav-partner">
-        Partner with us
-        <svg width="13" height="13" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <a href="/" class="nav-logo" aria-label="Ardena Platforms Africa Ltd — home">
+        <img src="assets/ardena.svg" alt="Ardena Platforms Africa Ltd" width="98" height="21" />
       </a>
       <div class="nav-center">
         <a href="/">Home</a>
         <a href="/about">About</a>
         <a href="/products">Products</a>
+        <a href="/services">Services</a>
+        <a href="/team">Team</a>
+        <a href="/partner">Partner</a>
         <a href="/contact" class="active">Contact</a>
       </div>
       <div class="nav-right">
         <a href="/contact" class="btn btn-blue">Get in touch</a>
       </div>
-      <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <button class="nav-toggle" id="navToggle" aria-label="Menu" aria-expanded="false" aria-controls="navDrawer">
         <span></span><span></span><span></span>
       </button>
     </nav>
@@ -35,8 +52,11 @@
     <a href="/">Home</a>
     <a href="/about">About</a>
     <a href="/products">Products</a>
+    <a href="/services">Services</a>
+    <a href="/team">Team</a>
+    <a href="/partner">Partner</a>
     <a href="/contact" class="active">Contact</a>
-    <a href="/partner" class="btn btn-blue btn-full" style="margin-top:12px;">Partner with us</a>
+    <a href="/contact" class="btn btn-blue btn-full" style="margin-top:12px;">Get in touch</a>
   </div>
 
   <!-- ① FORM — full viewport, two-column -->
@@ -48,14 +68,20 @@
         <div class="hero-anim" style="animation-delay:.1s">
           <h1 class="heading-lg">Let's build<br />something together.</h1>
           <p class="body-md" style="margin-top:20px;">
-            Whether you're a host, renter, business, developer, or investor —
+            Whether you need a website or an app built, want to list vehicles or
+            events on our platforms, or just have a question about what we do —
             we'd love to hear from you. We respond within one business day.
+          </p>
+          <p class="body-md" style="margin-top:20px;">
+            Prefer email? <a href="mailto:hello@ardena.africa" style="color:var(--blue);font-weight:600;">hello@ardena.africa</a><br />
+            Looking to partner? <a href="/partner" style="color:var(--blue);font-weight:600;">Send a partnership interest</a>
           </p>
         </div>
 
         <!-- Right: form -->
         <div data-anim="right">
         <form class="cform cform-bordered" id="contactForm" onsubmit="handleSubmit(event)">
+          <input type="hidden" name="form_type" value="Contact Enquiry" />
           <div class="form-row">
             <div class="fgroup">
               <label for="firstName">First name</label>
@@ -78,11 +104,23 @@
             <label for="topic">I'm enquiring about</label>
             <select id="topic" name="topic">
               <option value="" disabled selected>Select a topic</option>
-              <option>Ardena (Car Rental Platform)</option>
-              <option>Ardena Pay (Payments)</option>
+              <option>Software development (web, mobile, APIs)</option>
+              <option>AI solutions</option>
+              <option>Business automation</option>
+              <option>Technology consultancy</option>
+              <option>Digital commerce (stores, marketplaces)</option>
+              <option>Payments &amp; M-Pesa integration</option>
+              <option>Cloud hosting &amp; DevOps</option>
+              <option>Maintenance &amp; support plan</option>
+              <option>Data &amp; analytics</option>
+              <option>UI/UX &amp; product design</option>
+              <option>AI training for teams</option>
+              <option>Developer outsourcing</option>
+              <option>Ardena (vehicle marketplace)</option>
+              <option>als (AI study companion)</option>
+              <option>Tickopedia (events &amp; ticketing)</option>
               <option>Business partnership</option>
-              <option>Developer / API access</option>
-              <option>Investment</option>
+              <option>Careers</option>
               <option>Press &amp; media</option>
               <option>Other</option>
             </select>
@@ -93,7 +131,7 @@
           </div>
           <button type="submit" class="btn btn-blue btn-lg btn-full">
             Send message
-            <svg width="14" height="14" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <svg width="14" height="14" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </button>
           <p style="font-size:12px;color:var(--muted);text-align:center;margin-top:12px;">
             We respond within one business day.
@@ -116,51 +154,51 @@
     <div class="container">
       <div class="why-grid">
         <div>
-          <h2 class="heading-lg why-heading" data-anim="left">Ardena is<br />hiring &amp; partnering.</h2>
+          <h2 class="heading-lg why-heading" data-anim="left">Ardena is hiring<br />&amp; partnering.</h2>
           <p class="why-sub" data-anim="left" style="--delay:160ms">
-            We're building the future of African mobility and payments. If you want
-            to work on hard problems at the intersection of technology and Africa's
-            next chapter, we want to hear from you.
+            We're building software for African mobility, education and live events —
+            and for the businesses around us. If you want to work on hard problems
+            at that intersection, we want to hear from you.
           </p>
-          <div data-anim="left" style="--delay:240ms">
-            <a href="mailto:hello@ardena.africa" class="btn btn-white btn-lg">Send us a message</a>
+          <div data-anim="left" style="--delay:240ms;display:flex;gap:12px;flex-wrap:wrap;">
+            <a href="mailto:hello@ardena.africa" class="btn btn-white btn-lg">Email us directly</a>
+            <a href="/partner" class="btn btn-outline-white btn-lg">Partner with us</a>
           </div>
         </div>
         <div class="why-items" data-anim="right" style="--delay:120ms">
           <div class="why-item">
             <div class="why-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
-                <polyline points="14 2 14 8 20 8" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <rect x="2" y="4" width="20" height="14" rx="1" stroke="currentColor" stroke-width="1.8"/>
+                <path d="M2 8h20M8 22h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
               </svg>
             </div>
             <div class="why-text">
               <h4>For businesses</h4>
-              <p>Integrate Ardena into your corporate fleet, travel, or logistics operations via our enterprise APIs.</p>
+              <p>Need a website, a mobile app, or a system built? Tell us the project and we'll tell you honestly whether we're the right team for it.</p>
             </div>
           </div>
           <div class="why-item">
             <div class="why-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
                 <polyline points="16 18 22 12 16 6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
                 <polyline points="8 6 2 12 8 18" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
               </svg>
             </div>
             <div class="why-text">
               <h4>For developers</h4>
-              <p>Access our platform APIs, build on top of Ardena Pay's Stellar infrastructure, and expand what's possible.</p>
+              <p>Interested in our platform APIs, or in joining the team? Send us something you've built — a repo, a shipped app, anything real.</p>
             </div>
           </div>
           <div class="why-item">
             <div class="why-icon">
-              <svg width="22" height="22" viewBox="0 0 24 24" fill="none">
-                <line x1="12" y1="1" x2="12" y2="23" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-                <path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
               </svg>
             </div>
             <div class="why-text">
-              <h4>For investors</h4>
-              <p>We're building critical African mobility and payments infrastructure. Let's talk about what we're building and where we're going.</p>
+              <h4>For partners</h4>
+              <p>Hosts, fleets, insurers, event organisers and institutions — there's a defined commercial route in. Start on the <a href="/partner" style="color:var(--white);text-decoration:underline;">Partner page</a>.</p>
             </div>
           </div>
         </div>
@@ -174,12 +212,12 @@
       <div class="footer-main">
         <div>
           <div class="footer-logo-wrap">
-            <a href="/"><img src="assets/ardena.svg" alt="Ardena Platforms" class="footer-logo" /></a>
+            <a href="/"><img src="assets/ardena.svg" alt="Ardena Platforms Africa Ltd" class="footer-logo" /></a>
           </div>
           <p class="footer-tagline">
             Ardena Platforms Africa Ltd<br />
-            Incorporated March 17, 2026<br />
-            Technology · Mobility · Payments
+            Incorporated March 17, 2026 &middot; Nairobi, Kenya<br />
+            Software &middot; AI &middot; Automation &middot; Commerce
           </p>
         </div>
         <div class="footer-cols">
@@ -187,7 +225,8 @@
             <h5>Products</h5>
             <ul>
               <li><a href="https://ardena.co.ke" target="_blank" rel="noopener">Ardena</a></li>
-              <li><a href="/products">Ardena Pay</a></li>
+              <li><a href="https://als.ardena.co.ke" target="_blank" rel="noopener">als</a></li>
+              <li><a href="https://tickopedia.com" target="_blank" rel="noopener">Tickopedia</a></li>
             </ul>
           </div>
           <div class="footer-col">
@@ -195,15 +234,18 @@
             <ul>
               <li><a href="/about">About</a></li>
               <li><a href="/products">Products</a></li>
+              <li><a href="/services">Services</a></li>
+              <li><a href="/team">Team</a></li>
+              <li><a href="/partner">Partner</a></li>
               <li><a href="/contact">Contact</a></li>
             </ul>
           </div>
           <div class="footer-col">
             <h5>Connect</h5>
             <ul>
-              <li><a href="#">Twitter / X</a></li>
-              <li><a href="#">LinkedIn</a></li>
-              <li><a href="https://ardena.co.ke" target="_blank" rel="noopener">ardena.co.ke</a></li>
+              <li><a href="https://play.google.com/store/apps/dev?id=6656048407762494190" target="_blank" rel="noopener">Google Play</a></li>
+              <li><a href="https://apps.apple.com/ke/developer/ardena-platforms-africa-ltd/id6771888695" target="_blank" rel="noopener">App Store</a></li>
+              <li><a href="mailto:hello@ardena.africa">hello@ardena.africa</a></li>
             </ul>
           </div>
         </div>
