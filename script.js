@@ -178,7 +178,15 @@ document.querySelectorAll('.feature-item, .why-item, .timeline-item, .value-card
   const ctx = canvas?.getContext('2d');
   if (!canvas || !ctx) return;
 
-  const INK = '32, 32, 32';
+  // Brand colours: the field fades from Ardena blue on the left to Ardena
+  // purple on the right; crests and ripples brighten toward lavender.
+  const BLUE = [0, 122, 255];
+  const PURPLE = [86, 64, 180];
+  const LAVENDER = [150, 132, 232];
+  const SHADES = 24;
+  const mix = (a, b, t) => a.map((v, i) => Math.round(v + (b[i] - v) * t));
+  const palette = Array.from({ length: SHADES }, (_, i) => `rgb(${mix(BLUE, PURPLE, i / (SHADES - 1)).join(',')})`);
+  const crest = `rgb(${LAVENDER.join(',')})`;
   const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
   let width = 0, height = 0, frame = 0;
@@ -244,12 +252,12 @@ document.querySelectorAll('.feature-item, .why-item, .timeline-item, .value-card
         }
 
         const near = 1 - v;
-        const size = 0.7 + near * 1.9 + Math.max(0, h) * 0.18;
+        const size = 0.8 + near * 2.1 + Math.max(0, h) * 0.2;
         // Fade toward the horizon and toward the sides, so the copy stays clear.
         const edge = 1 - Math.abs(u) * 0.55;
-        const alpha = (0.06 + near * 0.62 + Math.max(0, h) * 0.06) * edge;
+        const alpha = (0.1 + near * 0.8 + Math.max(0, h) * 0.08) * edge;
         ctx.globalAlpha = Math.min(alpha, 0.9);
-        ctx.fillStyle = `rgb(${INK})`;
+        ctx.fillStyle = h > 1.15 ? crest : palette[Math.round(((u + 1) / 2) * (SHADES - 1))];
         ctx.fillRect(p.x - size / 2, p.y - size / 2, size, size);
       }
     }

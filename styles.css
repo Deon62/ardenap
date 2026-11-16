@@ -2377,3 +2377,15 @@ body { background: var(--white); color: var(--black); font-family: var(--font-sa
   .included li:last-child:nth-child(odd) { grid-column: auto; }
   .included li { min-height: 0; gap: 20px; }
 }
+
+/* "Get in touch" in the nav, and its twin in the mobile menu: Ardena purple */
+.nav-right .btn, .nav-drawer a.btn { background: var(--brand-purple); border-color: var(--brand-purple); color: var(--white); }
+.nav-right .btn:hover, .nav-drawer a.btn:hover { background: #3E3070; border-color: #3E3070; color: var(--white); }
+
+/* Soft brand glow beneath the hero's dot field */
+.hero-c {
+  background:
+    radial-gradient(60% 45% at 30% 100%, rgba(0,122,255,0.10), transparent 70%),
+    radial-gradient(55% 45% at 75% 100%, rgba(122,96,220,0.12), transparent 70%),
+    var(--white);
+}
