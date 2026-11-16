@@ -2391,11 +2391,8 @@ body { background: var(--white); color: var(--black); font-family: var(--font-sa
 }
 
 /* ── Partnership form: white section, underline fields ── */
-#interest .partner-steps { border-top-color: var(--line); }
-#interest .partner-step { border-bottom-color: var(--line); }
-#interest .partner-step-num { color: var(--muted); }
-#interest .partner-step h4 { color: var(--black); font-weight: 500; }
-#interest .partner-step p { color: var(--muted); }
+#interest .partner-step h4 { font-weight: 500; }
+#interest .partner-step p { color: rgba(255,255,255,0.78); }
 
 .partner-form { gap: 28px; }
 .partner-form .fgroup label,
@@ -2443,3 +2440,7 @@ body { background: var(--white); color: var(--black); font-family: var(--font-sa
 #interest .deck-success { border-color: var(--line); }
 #interest .deck-success .success-icon { border-color: var(--line); color: var(--black); }
 .partner-form .fgroup label.pcheck { text-transform: none; letter-spacing: 0; font-size: 15px; color: var(--black); }
+
+/* The form sits on a white panel inside the coloured section */
+.form-panel { background: var(--white); color: var(--black); padding: 48px 44px; box-shadow: 0 40px 80px -40px rgba(0,0,0,0.35); }
+@media (max-width: 768px) { .form-panel { padding: 32px 22px; } }
