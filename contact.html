@@ -63,26 +63,26 @@
   </div>
 
   <!-- ① FORM, full viewport, two-column -->
-  <section class="vp-section bg-grey">
+  <section class="vp-section bg-purple" id="contact-form">
     <div class="container">
       <div class="contact-grid">
 
         <!-- Left: title -->
         <div class="hero-anim" style="animation-delay:.1s">
-          <h1 class="heading-lg">Let's build<br />something together.</h1>
-          <p class="body-md" style="margin-top:20px;">
+          <h1 class="heading-lg" style="color:var(--white)">Let's build<br />something together.</h1>
+          <p class="body-md" style="margin-top:20px;color:rgba(255,255,255,0.78)">
             Whether you need a website or an app built, want to list vehicles or
             events on our platforms, or just have a question about what we do, we'd love to hear from you. We respond within one business day.
           </p>
-          <p class="body-md" style="margin-top:20px;">
-            Prefer email? <a href="mailto:info@ardena.co.ke" style="color:var(--blue);font-weight:600;">info@ardena.co.ke</a><br />
-            Looking to partner? <a href="/partner" style="color:var(--blue);font-weight:600;">Send a partnership interest</a>
+          <p class="body-md" style="margin-top:20px;color:rgba(255,255,255,0.78)">
+            Prefer email? <a href="mailto:info@ardena.co.ke" class="text-link" style="color:var(--white)">info@ardena.co.ke</a><br />
+            Looking to partner? <a href="/partner" class="text-link" style="color:var(--white)">Send a partnership interest</a>
           </p>
         </div>
 
         <!-- Right: form -->
-        <div data-anim="right">
-        <form class="cform cform-bordered" id="contactForm" onsubmit="handleSubmit(event)">
+        <div class="form-panel" data-anim="right">
+        <form class="cform" id="contactForm" onsubmit="handleSubmit(event)">
           <input type="hidden" name="form_type" value="Contact Enquiry" />
           <div class="form-row">
             <div class="fgroup">
